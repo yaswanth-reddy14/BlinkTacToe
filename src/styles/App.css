@@ -1,0 +1,43 @@
+/* Animations */
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-pop-in {
+  animation: popIn 0.3s ease-out forwards;
+}
+
+/* Player colors */
+.player-one {
+  background-color: rgba(99, 102, 241, 0.05);
+}
+
+.player-two {
+  background-color: rgba(244, 114, 182, 0.05);
+}
+
+/* Winning cells */
+.winning-cell {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(251, 191, 36, 0.7);
+  }
+  50% {
+    opacity: 0.8;
+    box-shadow: 0 0 25px rgba(251, 191, 36, 0.9);
+  }
+}
